@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ebce53b2c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="src/css/main.css">
+    <title>Welcome to Kodland</title>
+</head>
+<body>
+    <div class="kodland">
+        <div class="kodland-header">
+            <header class="kodland-header__header">
+                <h2><a href="index.html">Kodland</a></h2>
+                    <nav class="stil__header-nav">
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="#">Öğrenme Durumu</a></li>
+                        <li><a href="#">Kurslar</a></li>
+                        <li><a href="#">Fiyatlar</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </nav>
+                    <nav class="kodland-header__header-nav flex-nav">
+                        <div class="search-box">
+                            <form action="#" method="GET" class="search-form">
+                                <input class="search__input" name="search" type="text" placeholder="Ürün Ara">
+                            </form>
+                        </div>
+                        <div class="login_icon">
+                            <a href="login.html"><i class="fas fa-sign-in-alt"></i></a>
+                        </div>
+                    </nav>
+            </header>
+        </div>
+        <div class="kodland-banner">
+            <div class="kodland-banner__background">
+            </div>
+            <div class="kodland-banner__text-group">
+                <h2>Kodland'e Hoşgeldiniz!</h2>
+                <p>Birbirinden farklı dijital kurslarla gelişiminizi bir adım öteye taşıyoruz.</p>
+            </div>
+        </div>
+        <div class="kodland-info">
+            <div class="kodland-info__text-group">
+                <h2>Çocukların <em>geliştiği</em> ve <em>büyüdüğü</em> yer</h2>
+                <p>Çocukluğun doğal yaratıcılığını gerçek oyunlara, web sitelerine ve daha fazlasına yönlendirmeye yardımcı oluyoruz - Hepsi de her yaş grubuna uygun, güvenli ve eğlenceli bir ortamda.</p>
+            </div>
+        </div>
+        <div class="kodland-features">
+            <div class="kodland-features__main-heading">
+                <h3>Eğitimlerimiz</h3>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="kodland-card swiper-slide">
+                        <a href="#"><div class="kodland-card__container">
+                            <div class="kodland-card__img">
+                                <img src="src/images/amongus.png" alt="">
+                            </div>
+                            <div class="kodland-card__info">
+                                <h5>Roblox oyun tasarımı</h5>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+            
+                    <div class="kodland-card swiper-slide">
+                        <a href="#"><div class="kodland-card__container">
+                            <div class="kodland-card__img">
+                                <img src="src/images/round.png" alt="">
+                            </div>
+                            <div class="kodland-card__info">
+                                <h5>Python Start</h5>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="kodland-card swiper-slide">
+                        <a href="#"><div class="kodland-card__container">
+                            <div class="kodland-card__img">
+                                <img src="src/images/square.png" alt="">
+                            </div>
+                            <div class="kodland-card__info">
+                                <h5>Scratch</h5>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        <div class="kodland-callback">
+            <div class="kodland-callback__background">
+            </div>
+            <div class="kodland-callback__text-group">
+                <h2>Hadi sizin için en iyi yolu bulalım!</h2>
+                <p>Neyle başlayacağınız konusunda yardıma mı ihtiyacınız var? Çocukları ve ebeveynleri, öğretmenimizin de desteğiyle kendilerine en iyi yolu seçecekleri bir deneme sınıfına davet ediyoruz.</p>
+                <button class="callback-button" role="button">Deneme dersine üye olun</button>
+            </div>
+        </div>
+        <footer class="kodland-footer">
+            <ul>
+                <li><p>Kodland | 2022</p></li>
+                <li><a href="#">Gizlilik Politikası</a></li>
+                <li><a href="#">Kullanım Koşulları</a></li>
+                <li><a href="#">Faturalandırma</a></li>
+                <li><a href="#">Cayma Formu</a></li>
+                <li><p>made by Ege Beyaztaş</p></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="/src/js/index.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 5,
+        spaceBetween: 30,
+        breakpoints: {
+          300: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          969: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1200: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+        },
+            
+
+
+        });
+    </script>
+</body>
+</html>
